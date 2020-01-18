@@ -35,7 +35,7 @@ Route::get('/view','AdminController@view');
 Route::get('/settings','AdminController@settings');
 
 
-// Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
+ Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
 // Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

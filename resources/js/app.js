@@ -10,7 +10,8 @@ import Login from './views/Login'
 import Footer from './views/Footer'
 import Faq from './views/Faq'
 import Sign_Up from './views/Sign_Up'
-import Profile from  './views/Profile'
+import Teacher from  './views/Teacher'
+import Registration from './views/Registration'
 
 const router = new VueRouter({
     mode: 'history',
@@ -46,9 +47,14 @@ const router = new VueRouter({
             component: Sign_Up,
         },
         {
-            path: '/profile',
-            name: 'profile',
-            component: Profile,
+            path: '/teacher',
+            name: 'teacher',
+            component: Teacher,
+        },
+        {
+            path: '/registration',
+            name: 'registration',
+            component: Registration,
         },
 
 
