@@ -41,7 +41,19 @@ class Student_loginController extends Controller
 
 
 
-                DB::table('studentinformations')->insert($datax);
+               $id =  DB::table('studentinformations')->insertGetId($datax);
+               $user_profile=DB::table('studentinformations')
+                ->where('id', $id)
+                ->first();
+                Session::put('s_email',$user_profile->s_email);
+                Session::put('id',$user_profile->id);
+                Session::put('type','student');
+                Session::put('name',$user_profile->s_name);
+                Session::put('uni_name',$user_profile->s_university);
+                Session::put('clg_name',$user_profile->s_college);
+                Session::put('scl_name',$user_profile->s_school);
+                Session::put('gender',$user_profile->s_gender);
+                Session::put('address',$user_profile->s_address);
                 Session::put('message','post successfully');
                 return redirect::to('/view');
 

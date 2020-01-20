@@ -311,7 +311,7 @@
             </li>
 
              <li class="nav-item">
-              <a class="nav-link" href="{{URL::to('/post')}}">
+              <a class="nav-link" href="{{URL::to('/goestoview')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
                 <span class="btn btn-danger">History </span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->

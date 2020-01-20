@@ -36,6 +36,29 @@ Route::get('/reg_teacher', function () {
 // Route::get('/test', function () {
 //     return view('admin.test');
 // });
+Route::get('/registration', function () {
+    return view('admin.registration');
+});
+
+
+Route::get('/post', function () {
+    return view('admin.post');
+});
+
+
+
+Route::get('/goestoview','ViewController@viewPost');
+
+// Route::get('/view', function () {
+//     return view('admin.post');
+// });
+
+
+
+
+
+
+
 
 
 //admin to login from data base
@@ -75,11 +98,14 @@ Route::get('/settings','AdminController@settings');
 //add student
 
 
-Route::get('/post','PostController@post_ad');
+//Route::get('/post','PostController@post_ad');
 Route::get('/alluser','AlluserController@alluser');
  
 
-Route::get('/registration','RegistrationController@registration');
+
+
+
+//Route::get('/registration','RegistrationController@registration');
 
 
 
@@ -88,3 +114,7 @@ Route::post('/post_somethings','PostController@post_somethings');
 
 
 Route::post('/registration','RegistrationController@registration_booth');
+
+///advertisement of 
+
+Route::post('/post_job','PostController@post_somethings');

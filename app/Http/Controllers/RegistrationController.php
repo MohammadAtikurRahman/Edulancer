@@ -40,9 +40,10 @@ class RegistrationController extends Controller
 
 
 
-                DB::table('userofedulancers')->insert($datax);
+        $id =DB::table('userofedulancers')->insertGetId($datax);
+        
                 Session::put('message','post successfully');
-                return redirect::to('/post');
+                return redirect::to('/layout');
 
 
 

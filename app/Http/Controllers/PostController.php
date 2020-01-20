@@ -30,26 +30,47 @@ class PostController extends Controller
 
                $data=array();
 
-
-               $data['ad_salary']=$request->ad_salary;
-               $data['ad_city']=$request->ad_city;
-               $data['ad_location']=$request->ad_location;
-
-               $data['ad_medium']=$request->ad_medium;
-               $data['ad_gender']=$request->ad_gender;
-               $data['ad_institue']=$request->ad_institue;
-
-               $data['ad_post']=$request->ad_post;
+              
+               if(Session::get('type') == 'teacher')
+               {
+                $data['teacher_id']=Session::get('id');
+               }
+               else{
+                $data['student_id']=Session::get('id');
+               }
                
+               
+
+               $data['r_subject']=$request->r_subject;
+
+               $data['r_salary']=$request->r_salary;
+               $data['r_weekly']=$request->r_weekly;
+
+              
+               $data['r_schedule']=$request->r_schedule;
+               $data['r_location']=$request->r_location;
+
+               $data['r_gender']=$request->r_gender;
+
+               $data['r_address']=$request->r_address;
+               $data['r_city']=$request->r_city;
+
+               $data['r_area']=$request->r_area;
+               $data['r_medium']=$request->r_medium;
+
+               $data['r_details']=$request->r_details;
+
+
+
 
                print_r($data);
 
                
+                echo "hello";
 
 
 
-
-         DB::table('advertisementofthewebs')->insert($data);
+         DB::table('posttimelines')->insert($data);
          Session::put('message','post successfully');
          return redirect::to('/post');
 

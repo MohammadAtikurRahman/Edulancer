@@ -76,7 +76,20 @@ class Teacher_loginController extends Controller
 
 
 
-                DB::table('teacherinformations')->insert($datay);
+        
+                $id =  DB::table('teacherinformations')->insertGetId($datay);
+               $user_profile=DB::table('teacherinformations')
+                ->where('t_id', $id)
+                ->first();
+                Session::put('t_email',$user_profile->t_email);
+                Session::put('id',$user_profile->t_id);
+                Session::put('type','teacher');
+                Session::put('name',$user_profile->t_name);
+                Session::put('uni_name',$user_profile->t_university);
+                Session::put('clg_name',$user_profile->t_college);
+                Session::put('scl_name',$user_profile->t_school);
+                Session::put('gender',$user_profile->t_gender);
+                Session::put('address',$user_profile->t_p_address);
                Session::put('message','post successfully');
               return redirect::to('/view');
 

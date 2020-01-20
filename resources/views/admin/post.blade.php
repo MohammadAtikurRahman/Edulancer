@@ -48,39 +48,39 @@
 
 
               <h3 class="card-title text-left mb-3">Advertisement Of Your Tution Requirment</h3>
-              <form method="post" action="{{URL::to('/registration')}}">
+              <form method="post" action="{{URL::to('/post_job')}}">
 
                 {{csrf_field()}}
                
                             <div class="form-row">
                               <div class="form-group col-md-6">
-                                <label for="inputName4">Name of Subject</label>
-                                <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Your Name">
+                                <label for="inputName4">Subject</label>
+                                <input type="text" class="form-control"  id="inputEmail4" name="r_subject" placeholder="Enter Your Name">
                               </div>
                               <div class="form-group col-md-6">
                                 <label for="inputEmail4">Required Salary</label>
-                                <input type="text" class="form-control" id="inputPassword4" placeholder="Enter Your Email">
+                                <input type="text" class="form-control" id="inputPassword4" name="r_salary"   placeholder="Enter Your Salary">
                               </div>
 
 
                                 <div class="form-group col-md-6">
-                                 <label for="inputName4">Timing in the week</label>
-                                 <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Your School Name">
+                                 <label for="inputName4">weekly tution</label>
+                                 <input type="text" class="form-control" id="inputEmail4" name="r_weekly" placeholder="In a week how many time tutto come">
                                 </div>
                                 <div class="form-group col-md-6">
-                                 <label for="inputEmail4">Time to come for tution</label>
-                                 <input type="text" class="form-control" id="inputPassword4" placeholder="Enter Your College Name">
+                                 <label for="inputEmail4">Schedule</label>
+                                 <input type="time" class="form-control" id="inputPassword4" name="r_schedule" placeholder="Enter Your time for tution">
                                 </div>
                                 <div class="form-group col-md-6">
                                  <label for="inputEmail4">Location</label>
-                                 <input type="email" class="form-control" id="inputPassword4" placeholder="Enter Your University Name">
+                                 <input type="text" class="form-control" id="inputPassword4" name="r_location" placeholder="Enter your location">
                                 </div>
                                 <div class="form-group col-md-6">
                                           <label for="inputGender4">Gender Prefrence</label>
-                                                <select class="form-control form-control-lg">
+                                                <select class="form-control form-control-lg" name="r_gender">
                                                 <option selected>Choose...</option>
-                                                <option>Female</option>
-                                                <option>Male</option>
+                                                <option value="female" >Female</option>
+                                                <option value="male" >Male</option>
 
                                               </select>
                                </div>
@@ -97,7 +97,7 @@
 
                             <div class="form-group">
                               <label for="inputAddress">Address</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                              <input type="text" class="form-control" id="inputAddress" name="r_address" placeholder="enter your address">
                             </div>
                             <!-- <div class="form-group">
                               <label for="inputAddress2">Address 2</label>
@@ -106,22 +106,28 @@
                             <div class="form-row">
                               <div class="form-group col-md-4">
                                 <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <input type="text" class="form-control" id="inputCity" name="r_city"  placeholder="required city" >
                               </div>
                               <div class="form-group col-md-4">
                                 <label for="inputCity">Area</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <input type="text" class="form-control" id="inputCity" name="r_area"  placeholder="required city"  >
                               </div>
                               
                               <div class="form-group col-md-4">
                                           <label for="inputGender4">Medium Prefrence</label>
-                                                <select class="form-control form-control-lg">
+                                                <select class="form-control form-control-lg" name="r_medium" >
                                                 <option selected>Choose...</option>
-                                                <option>English</option>
-                                                <option>Bangla</option>
+                                                <option value="english">English</option>
+                                                <option value="bangla">Bangla</option>
 
                                               </select>
                                </div>
+
+                               <div class="form-group col-md-12">
+                                <label for="inputCity">Short Description</label>
+                                <input type="text" class="form-control" id="inputCity" name="r_details"  placeholder="Describe here shortly"  >
+                              </div>
+                              
                                               
                             <div class="form-group">
                               <div class="form-check">
