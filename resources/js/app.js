@@ -10,7 +10,11 @@ import Login from './views/Login'
 import Footer from './views/Footer'
 import Faq from './views/Faq'
 import Sign_Up from './views/Sign_Up'
+<<<<<<< HEAD
 import Teacher from './views/Teacher'
+=======
+import Teacher from  './views/Teacher'
+>>>>>>> 544040bdf6fb0406f3f1f1cf67c63b63b9953929
 import Registration from './views/Registration'
 
 const router = new VueRouter({
