@@ -19,8 +19,11 @@
   <link rel="stylesheet" href="../../css/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.html" />
-</head>
 
+
+  
+</head>
+@yield('boots')
 <body class="sidebar-dark">
   <div class="container-scroller">
 
@@ -41,39 +44,42 @@
 
 
               <h3 class="card-title text-left mb-3">Register As a Student</h3>
-              <form method="post" action="{{URL::to('/registration')}}">
+              <form method="post" action ="{{ url('/student_reg') }}">
 
                 {{csrf_field()}}
                
                             <div class="form-row">
-                              <div class="form-group col-md-6">
+                              <div class="form-group col-md-4">
                                 <label for="inputName4">Name</label>
-                                <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Your Name">
+                                <input type="text" class="form-control" name="s_name" placeholder="Enter Your Name" required>
                               </div>
-                              <div class="form-group col-md-6">
+                              <div class="form-group col-md-4">
                                 <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" id="inputPassword4" placeholder="Enter Your Email">
+                                <input type="email" class="form-control" name="s_email"  placeholder="Enter Your Email">
                               </div>
-
+                              <div class="form-group col-md-4">
+                                <label for="inputEmail4">Password</label>
+                                <input type="password" class="form-control" name="s_password"  placeholder="Enter Your Email">
+                              </div>
 
                                 <div class="form-group col-md-6">
                                  <label for="inputName4">School </label>
-                                 <input type="text" class="form-control" id="inputEmail4" placeholder="Enter Your School Name">
+                                 <input type="text" class="form-control" name="s_school" placeholder="Enter Your School Name">
                                 </div>
                                 <div class="form-group col-md-6">
                                  <label for="inputEmail4">College</label>
-                                 <input type="email" class="form-control" id="inputPassword4" placeholder="Enter Your College Name">
+                                 <input type="text" class="form-control" name="s_college" placeholder="Enter Your College Name">
                                 </div>
                                 <div class="form-group col-md-6">
                                  <label for="inputEmail4">University</label>
-                                 <input type="email" class="form-control" id="inputPassword4" placeholder="Enter Your University Name">
+                                 <input type="text" class="form-control" name="s_university" placeholder="Enter Your University Name">
                                 </div>
                                 <div class="form-group col-md-6">
                                           <label for="inputGender4">Gender</label>
-                                                <select class="form-control form-control-lg">
+                                                <select class="form-control form-control-lg" name="s_gender" >
                                                 <option selected>Choose...</option>
-                                                <option>Female</option>
-                                                <option>Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="male">Male</option>
 
                                               </select>
                                </div>
@@ -90,7 +96,7 @@
 
                             <div class="form-group">
                               <label for="inputAddress">Address</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                              <input type="text" class="form-control" name="s_address" placeholder="Enter Your Address">
                             </div>
                             <!-- <div class="form-group">
                               <label for="inputAddress2">Address 2</label>
@@ -99,16 +105,16 @@
                             <div class="form-row">
                               <div class="form-group col-md-4">
                                 <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <input type="text" class="form-control" id="inputCity" name="s_city"   placeholder="Enter Your City"  >
                               </div>
                               <div class="form-group col-md-4">
                                 <label for="inputCity">Thana</label>
-                                <input type="text" class="form-control" id="inputCity">
+                                <input type="text" class="form-control" id="inputCity"      name="s_thana"   placeholder="Enter Your Thana"                >
                               </div>
                               
                               <div class="form-group col-md-4">
                                 <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
+                                <input type="text" class="form-control" id="inputZip"  name="s_zip"   placeholder="Enter Your ZIP"        >
                               </div>
                             </div>
                             <div class="form-group">
@@ -116,7 +122,7 @@
                                
                               </div>
                             </div>
-                            <button type="submit" class="btn btn-danger">Register</button>
+                            <button type="submit" class="btn btn-success" style="background-color:#7d00e4;color:white;border-color:#7d00e4">Register</button>
 
 
                 

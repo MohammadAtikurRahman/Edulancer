@@ -53,11 +53,11 @@
 
                 <div class="form-group">
                   <label>Username or email *</label>
-                  <input type="text" class="form-control p_input" name="admin_email">
+                  <input type="text" class="form-control p_input" name="s_email">
                 </div>
                 <div class="form-group">
                   <label>Password *</label>
-                  <input type="password" class="form-control p_input" name ='admin_password'>
+                  <input type="password" class="form-control p_input" name ='s_password'>
                 </div>
                 <div class="form-group d-flex align-items-center justify-content-between">
                   <div class="icheck-square">
@@ -67,7 +67,7 @@
                   <a href="#" class="forgot-pass">Forgot password</a>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary btn-block enter-btn">Login</button>
+                  <button type="submit" class="btn btn-primary btn-block enter-btn"style="background-color:#7d00e4;color:white;border-color:#7d00e4">Login</button>
                 </div>
                 <div class="d-flex justify-content-center mb-4">
                   <a href="#" class="facebook-login btn btn-facebook mr-2">Facebook</a>

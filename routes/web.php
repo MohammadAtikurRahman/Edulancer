@@ -21,8 +21,38 @@ Route::get('/', function () {
 Route::get('/backend', function () {
     return view('admin.admin_login');
 });
+Route::get('/edulancer', function () {
+    return view('admin.edulancer');
+});
 
+
+Route::get('/reg_for_teacher', function () {
+    return view('admin.reg_for_teacher');
+});
+
+Route::get('/reg_teacher', function () {
+    return view('admin.reg_teacher');
+});
+// Route::get('/test', function () {
+//     return view('admin.test');
+// });
+
+
+//admin to login from data base
 Route::post('/adminlogin','AdminController@login_dashboard');
+//;;;;;;;;;;;;;;;;
+
+Route::post('/techerlogincheck','Verify_loginController@logincheckfromdatabase');
+
+//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Route::post('/student_reg','Student_loginController@login_dashboard_for_student');
+
+Route::post('/loginforteacher','Teacher_loginController@login_dashboard_for_teacher');
+
+
+
+
+Route::post('/reg_login','AdminController@reg_dashboard');
 
 Route::get('/logout','AdminController@logout');
 
@@ -34,13 +64,14 @@ Route::get('/view','AdminController@view');
 
 Route::get('/settings','AdminController@settings');
 
+//..................................................................
 
 // Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
 // Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-
+//........................................................................
 //add student
 
 

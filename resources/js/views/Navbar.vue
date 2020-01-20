@@ -1,8 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top"> 
+
+  <nav  class="navbar navbar-expand-md navbar-light bg-danger fixed-top" style="background-color: ##1E90FF;" > 
       <router-link class="navbar-brand" to="/home">
       <img
-        src="//logo.clearbit.com/spotify.com"
+        src="images/logoedu.png"
+        style="margin-left:80px"
         width="50"
         height="50"
         class="d-inline-block align-top"
@@ -22,26 +24,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-lg-auto">
         <li class="nav-item">
-          <router-link class="nav-link" to="/findjob">
+          <router-link class="text-white" to="/findjob">
             Find Job
             <span class="sr-only">(current)</span>
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/hiretutor">Hire Tutor</router-link>
+          <router-link class="text-white" to="/hiretutor">Hire Tutor</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/signin">Signin</router-link>
+          <router-link class="text-white" to="/signin">Signin</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="login">Login</router-link>
+          <router-link class="text-white" to="login">Login</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="faq">FAQ</router-link>
+          <router-link class="text-white" to="faq">FAQ</router-link>
         </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="profile">Profile</router-link>
-        </li>
+        
       </ul>
     </div>
   </nav>

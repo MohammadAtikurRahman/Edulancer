@@ -56,6 +56,15 @@ class AdminController extends Controller
     }
 
 
+    public function reg_dashboard(){
+
+
+      return redirect::to('/admin_dashboard');
+
+
+    }
+    
+
 
 
 
@@ -70,16 +79,16 @@ class AdminController extends Controller
       //  return view('admin.dashboard');
 
 
-        $email=$request->admin_email;
+        $email=$request->s_email;
       //  echo "$email";
        
-        $password=($request->admin_password);
+        $password=($request->s_password);
        // echo "$password";
        
 
-        $result=DB::table('admininfos')
-        ->where('admin_email', $email)
-        ->where('admin_password',$password)
+        $result=DB::table('studentinformations')
+        ->where('s_email', $email)
+        ->where('s_password',$password)
         
         ->first();
        
@@ -103,12 +112,20 @@ class AdminController extends Controller
       //return view('admin.dashboard');
 
 
-        Session::put('admin_email',$result->admin_email);
-        Session::put('admin_id',$result->admin_id);
-        
+        Session::put('s_email',$result->s_email);
+        Session::put('id',$result->id);
+        Session::put('type','student');
           
-          
-
+           $user_profile=DB::table('studentinformations')
+          ->where('id', $result->id)
+          ->first();
+     
+          Session::put('name',$user_profile->s_name);
+          Session::put('uni_name',$user_profile->s_university);
+          Session::put('clg_name',$user_profile->s_college);
+          Session::put('scl_name',$user_profile->s_school);
+          Session::put('gender',$user_profile->s_gender);
+          Session::put('address',$user_profile->s_address);
         return redirect::to('/admin_dashboard');
 
 
@@ -128,7 +145,7 @@ class AdminController extends Controller
 
       }
 
-
+      
 
 
 

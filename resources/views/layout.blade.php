@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -122,7 +123,7 @@
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper">
+      <div class="text-center navbar-brand-wrapper" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >
         <a class="navbar-brand brand-logo" href=""{{URL::to('/admin_dashboard')}}""><img src="images/salt_logo.png" alt="Logo"></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center">
@@ -238,9 +239,14 @@
             <div class="details">
               
     <!-- <p src="https://studio.youtube.com/channel/UCW4sDRCWmvs4lerHEiY6MrQ/livestreaming/dashboard?v=XY_NxgJIOgM" class="user-name">Live Class</p> -->
+             
               
-              <p class="user-name">Md. Atikur Rahman</p>
+              <p class="user-name">{{ session()->get( 'name' ) }}</p>
+              @if(Session::get('type') == 'teacher')
+              <p class="designation">Login As A Teacher</p>
+              @else
               <p class="designation">Login As A Student</p>
+              @endif
             </div>
 
                <!-- Add icon library -->
@@ -311,7 +317,7 @@
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
             </li>
-
+                
 
                  <li class="nav-item">
               <a class="nav-link" href="{{URL::to('/post')}}">
@@ -324,20 +330,20 @@
               <a class="nav-link" href="{{URL::to('/alluser')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 
-                <span class="menu-title">Univerity Name:</span>
+                <span class="menu-title">Univerity Name: {{ session()->get( 'uni_name' ) }} </span>
               </a>
 
 
             <a class="nav-link" href="{{URL::to('/alluser')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 
-                <span class="menu-title">College Name:</span>
+                <span class="menu-title">College Name: {{ session()->get( 'clg_name' ) }}</span>
               </a>
 
               <a class="nav-link" href="{{URL::to('/alluser')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 
-                <span class="menu-title">School Name:</span>
+                <span class="menu-title">School Name: {{ session()->get( 'scl_name' ) }}</span>
               </a>
 
 
@@ -348,12 +354,12 @@
                <a class="nav-link" href="{{URL::to('/alluser')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 
-                <span class="menu-title">Gender:</span>
+                <span class="menu-title">Gender: {{ session()->get( 'gender' ) }}</span>
               </a>
               <a class="nav-link" href="{{URL::to('/alluser')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 
-                <span class="menu-title">Address:</span>
+                <span class="menu-title">Address: {{ session()->get( 'address' ) }}</span>
               </a>
 
            

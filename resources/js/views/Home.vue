@@ -3,24 +3,43 @@
     <div>
       <navbar-view></navbar-view>
     </div>
+
+
+
+
+     <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
     <div class="container">
       <div id="my-slider" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#my-slider" data-slide-to="0" class="active"></li>
-          <li data-target="#my-slider" data-slide-to="1"></li>
-          <li data-target="#my-slider" data-slide-to="2"></li>
+          <!-- <li data-target="#my-slider" data-slide-to="1"></li> -->
+          <!-- <li data-target="#my-slider" data-slide-to="2"></li>
           <li data-target="#my-slider" data-slide-to="3"></li>
-          <li data-target="#my-slider" data-slide-to="4"></li>
+          <li data-target="#my-slider" data-slide-to="4"></li> -->
         </ol>
         <div class="carousel-inner">
+
+
+          
           <div class="carousel-item active">
+
+
+
+                
             <img
-              class="d-block w-100"
-              src="https://src.img.photos/2019/01/23/Suc.md.jpg"
+              class="d-block w-100 h-100"
+              src="images/uiu.jpg"
               width="300"
               height="600"
               alt="First slide"
             />
+             
+         
+
+
             <div class="carousel-caption">
               <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
             </div>
@@ -28,7 +47,7 @@
           <div class="carousel-item">
             <img
               class="d-block w-100"
-              src="https://src.img.photos/2019/01/24/aCPU.md.jpg"
+              src="images/uiu1.jpg"
               width="300"
               height="600"
               alt="Second slide"
@@ -38,25 +57,25 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img
+            <!-- <img
               class="d-block w-100"
               src="https://src.img.photos/2019/01/23/Lzy.md.jpg"
               width="300"
               height="600"
               alt="Third slide"
-            />
+            /> -->
             <div class="carousel-caption">
               <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
             </div>
           </div>
           <div class="carousel-item">
-            <img
+            <!-- <img
               class="d-block w-100"
               src="https://src.img.photos/2019/01/23/zaU.md.jpg"
               width="300"
               height="600"
               alt="Fourth slide"
-            />
+            /> -->
             <div class="carousel-caption">
               <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
             </div>
@@ -90,67 +109,195 @@
       <h1 class="text-center">Popular Courses</h1>
       <br />
       <div class="row">
-        <div class="col-sm-6 col-lg-4 col-12">
+        <div class="col-sm-6 col-lg-3 col-18">
           <p>bangla</p>
           <img
-            src="//logo.clearbit.com/spotify.com"
+           src="images/bangla.png"
             width="150"
             height="150"
             class="img-fluid img-thumbnail"
             alt
           />
         </div>
-        <div class="col-sm-6 col-lg-4 col-12">
+        <div class="col-sm-6 col-lg-3 col-12">
           <p>English</p>
           <img
-            src="//logo.clearbit.com/spotify.com"
+            src="images/bangla.png"
             width="150"
             height="150"
             class="img-fluid img-thumbnail"
             alt
           />
         </div>
-        <div class="col-sm-6 col-lg-4 col-12">
+        <div class="col-sm-6 col-lg-3 col-12">
           <p>English</p>
           <img
-            src="//logo.clearbit.com/spotify.com"
+           src="images/bangla.png"
             width="150"
             height="150"
             class="img-fluid img-thumbnail"
             alt
           />
         </div>
-        <div class="col-sm-6 col-lg-4 col-12">
+
+           <div class="col-sm-6 col-lg-3 col-12">
           <p>English</p>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+           src="images/bangla.png"
             width="150"
             height="150"
             class="img-fluid img-thumbnail"
             alt
           />
         </div>
-        <div class="col-sm-6 col-lg-4 col-12">
+
+
+
+
+
+       <div class="col-sm-6 col-lg-3 col-12">
           <p>English</p>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+           src="images/bangla.png"
             width="150"
             height="150"
             class="img-fluid img-thumbnail"
             alt
           />
         </div>
-        <div class="col-sm-6 col-lg-4 col-12">
+
+       <div class="col-sm-6 col-lg-3 col-12">
           <p>English</p>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+           src="images/bangla.png"
             width="150"
             height="150"
             class="img-fluid img-thumbnail"
             alt
           />
         </div>
+
+       <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+           src="images/bangla.png"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+        <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+           src="images/bangla.png"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+
+
       </div>
+       <h1 class="text-center">Popular Teacher</h1>
+      <br />
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 col-18">
+          <p>bangla</p>
+          <img
+           src="images/profile.jpg"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+        <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+              src="images/profile.jpg"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+        <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+              src="images/profile.jpg"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+
+           <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+              src="images/profile.jpg"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+
+
+
+
+
+       <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+              src="images/profile.jpg"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+
+       <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+              src="images/profile.jpg"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+
+       <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+              src="images/profile.jpg"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+        <div class="col-sm-6 col-lg-3 col-12">
+          <p>English</p>
+          <img
+              src="images/profile.jpg"
+            width="150"
+            height="150"
+            class="img-fluid img-thumbnail"
+            alt
+          />
+        </div>
+
+
+      </div>
+
+
+
+
     </div>
     <div class="container">
       <br />
@@ -179,7 +326,7 @@
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active text-center col-lg-12 col-sm-6">
             <img
-              src="//logo.clearbit.com/spotify.com"
+             src="images/uiu.jpg"
               width="120"
               height="120"
               class="img-fluid rounded-circle"
