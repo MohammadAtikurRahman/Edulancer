@@ -44,10 +44,16 @@
 
                         <p style="font-size: 15px !important; margin-top: 0px !important; margin-bottom: 0px !important;">
                             <span style="font-weight: bold;">Details : </span>{{ $post->r_details }}</p>                       
+                   
+                            <a href="{{ URL::to('/historyUpdate/'.$post->r_id )}}">Update</a>
+                            <br>
+                            <a href="{{ URL::to('/historyDelete/'.$post->r_id )}}">Delete</a>
+                            
                     </div>
 
 
 
+                     
                      
 
 
@@ -92,7 +98,7 @@
             </div>
         </div>
         @endforeach
-       
+        
 
 
     </div>   

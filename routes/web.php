@@ -54,11 +54,12 @@ Route::get('/goestoview','ViewController@viewPost');
 // });
 
 
+Route::get('/goestohistory','StudenthistoryController@historyPost')->name('goestohistory');
 
 
+Route::get('/historyUpdate/{id}', 'StudenthistoryController@historyUpdate');
 
-
-
+Route::get('/historyDelete/{id}', 'StudenthistoryController@historyDelete');
 
 
 //admin to login from data base
@@ -118,3 +119,8 @@ Route::post('/registration','RegistrationController@registration_booth');
 ///advertisement of 
 
 Route::post('/post_job','PostController@post_somethings');
+
+
+Route::post('/update_job','PostController@update_post');
+
+Route::post('/search_job','PostController@search_post');

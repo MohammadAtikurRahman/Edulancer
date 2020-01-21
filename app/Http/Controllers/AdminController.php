@@ -126,7 +126,7 @@ class AdminController extends Controller
           Session::put('scl_name',$user_profile->s_school);
           Session::put('gender',$user_profile->s_gender);
           Session::put('address',$user_profile->s_address);
-        return redirect::to('/admin_dashboard');
+        return redirect::to('/post');
 
 
 

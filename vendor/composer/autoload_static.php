@@ -405,6 +405,7 @@ class ComposerStaticInitcd08412b78a9ee21f24076d0983f34a6
         'App\\Http\\Controllers\\Teacher_loginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Teacher_loginController.php',
         'App\\Http\\Controllers\\UserinformationController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserinformationController.php',
         'App\\Http\\Controllers\\Verify_loginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Verify_loginController.php',
+        'App\\Http\\Controllers\\ViewController' => __DIR__ . '/../..' . '/app/Http/Controllers/ViewController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',

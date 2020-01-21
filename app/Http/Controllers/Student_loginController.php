@@ -55,7 +55,7 @@ class Student_loginController extends Controller
                 Session::put('gender',$user_profile->s_gender);
                 Session::put('address',$user_profile->s_address);
                 Session::put('message','post successfully');
-                return redirect::to('/view');
+                return redirect::to('/post');
 
 
 

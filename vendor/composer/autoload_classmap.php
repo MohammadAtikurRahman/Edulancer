@@ -24,6 +24,7 @@ return array(
     'App\\Http\\Controllers\\Teacher_loginController' => $baseDir . '/app/Http/Controllers/Teacher_loginController.php',
     'App\\Http\\Controllers\\UserinformationController' => $baseDir . '/app/Http/Controllers/UserinformationController.php',
     'App\\Http\\Controllers\\Verify_loginController' => $baseDir . '/app/Http/Controllers/Verify_loginController.php',
+    'App\\Http\\Controllers\\ViewController' => $baseDir . '/app/Http/Controllers/ViewController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',

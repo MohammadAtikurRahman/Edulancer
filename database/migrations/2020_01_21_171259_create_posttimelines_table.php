@@ -37,8 +37,9 @@ class CreatePosttimelinesTable extends Migration
 
 
 
+            $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
 
-            $table->timestamps();
+           
 
 
         });

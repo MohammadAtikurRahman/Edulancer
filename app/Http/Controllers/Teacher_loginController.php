@@ -91,7 +91,7 @@ class Teacher_loginController extends Controller
                 Session::put('gender',$user_profile->t_gender);
                 Session::put('address',$user_profile->t_p_address);
                Session::put('message','post successfully');
-              return redirect::to('/view');
+              return redirect::to('/post');
 
 
 

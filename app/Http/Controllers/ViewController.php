@@ -12,10 +12,12 @@ class ViewController extends Controller
         
         $rows1 = DB::table('posttimelines')
         ->join('studentinformations','studentinformations.id','=','posttimelines.student_id')
+        ->orderBy('posttimelines.created_at', 'desc')
         ->get();
 
         $rows2 = DB::table('posttimelines')
         ->join('teacherinformations','teacherinformations.t_id','=','posttimelines.teacher_id')
+        ->orderBy('posttimelines.created_at', 'desc')
         ->get();
 
         $data = [
@@ -23,7 +25,7 @@ class ViewController extends Controller
             'table2'   => $rows2
         ];
         
-        return view ('admin.view')->with('posts', $data);;
+        return view ('admin.view')->with('posts', $data);
       
       }
 

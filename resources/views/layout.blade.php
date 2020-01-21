@@ -142,10 +142,11 @@
             <a class="dropdown-item" href="#">Separated link</a>
           </div>
         </div> -->
-        <form class="form-inline mt-2 ml-3 mt-md-0 d-none d-sm-block">
+        <form class="form-inline mt-2 ml-3 mt-md-0 d-none d-sm-block" method="post" action="{{URL::to('/search_job')}}">
+        {{csrf_field()}}
           <div class="input-group solid">
             <span class="input-group-addon"><i class="mdi mdi-magnify"></i></span>
-            <input type="text" class="form-control">
+            <input type="text" name="search" id="search" class="form-control">
           </div>
         </form>
         <ul class="navbar-nav ml-lg-auto">
@@ -301,15 +302,39 @@
                 <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Post Ad</span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
-            </li>
 
-             <li class="nav-item">
-              <a class="nav-link" href="{{URL::to('/goestoview')}}">
+               <a class="nav-link" href="{{URL::to('/notification')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
-                <span class="btn btn-danger"style="background-color:#7d00e4;color:white;border-color:#7d00e4">History </span>
+                <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Notifice</span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
+
+
+
+
+
+
+
+
             </li>
+              @if(Session::get('type') == 'teacher')
+                <li class="nav-item">
+                <a class="nav-link" href="{{URL::to('/goestoview')}}">
+                  <i class="mdi mdi-puzzle menu-icon"></i>
+                  <span class="btn btn-danger"style="background-color:#7d00e4;color:white;border-color:#7d00e4">Timeline </span>
+                  <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
+                </a>
+              </li>
+              @else
+                <li class="nav-item">
+                <a class="nav-link" href="{{URL::to('/goestohistory')}}">
+                  <i class="mdi mdi-puzzle menu-icon"></i>
+                  <span class="btn btn-danger"style="background-color:#7d00e4;color:white;border-color:#7d00e4">History </span>
+                  <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
+                </a>
+              </li>
+              @endif
+             
                 
 
                  <li class="nav-item">

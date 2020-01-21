@@ -48,39 +48,47 @@
 
 
               <h3 class="card-title text-left mb-3">Advertisement Of Your Tution Requirment</h3>
-              <form method="post" action="{{URL::to('/post_job')}}">
+              <form method="post" action="{{URL::to('/update_job')}}">
 
                 {{csrf_field()}}
-               
+                <input type="hidden" id="r_id" name="r_id" value="{{ $posts->r_id }}">
+
                             <div class="form-row">
                               <div class="form-group col-md-6">
                                 <label for="inputName4">Subject</label>
-                                <input type="text" class="form-control"  id="inputEmail4" name="r_subject" placeholder="Enter Your Name">
+                                <input type="text" class="form-control"  id="inputEmail4" name="r_subject" placeholder="Enter Your Name" value="{{ $posts->r_subject }}">
                               </div>
                               <div class="form-group col-md-6">
                                 <label for="inputEmail4">Required Salary</label>
-                                <input type="text" class="form-control" id="inputPassword4" name="r_salary"   placeholder="Enter Your Salary">
+                                <input type="text" class="form-control" id="inputPassword4" name="r_salary"   placeholder="Enter Your Salary" value="{{ $posts->r_salary }}">
                               </div>
 
 
                                 <div class="form-group col-md-6">
                                  <label for="inputName4">weekly tution</label>
-                                 <input type="text" class="form-control" id="inputEmail4" name="r_weekly" placeholder="In a week how many time tutto come">
+                                 <input type="text" class="form-control" id="inputEmail4" name="r_weekly" placeholder="In a week how many time tutto come" value="{{ $posts->r_weekly }}">
                                 </div>
                                 <div class="form-group col-md-6">
                                  <label for="inputEmail4">Schedule</label>
-                                 <input type="time" class="form-control" id="inputPassword4" name="r_schedule" placeholder="Enter Your time for tution">
+                                 <input type="time" class="form-control" id="inputPassword4" name="r_schedule" placeholder="Enter Your time for tution" value="{{ $posts->r_schedule }}">
                                 </div>
                                 <div class="form-group col-md-6">
                                  <label for="inputEmail4">Location</label>
-                                 <input type="text" class="form-control" id="inputPassword4" name="r_location" placeholder="Enter your location">
+                                 <input type="text" class="form-control" id="inputPassword4" name="r_location" placeholder="Enter your location" value="{{ $posts->r_location }}">
                                 </div>
                                 <div class="form-group col-md-6">
                                           <label for="inputGender4">Gender Prefrence</label>
-                                                <select class="form-control form-control-lg" name="r_gender">
+                                                <select class="form-control form-control-lg" name="r_gender" value="{{ $posts->r_gender }}">
                                                 <option selected>Choose...</option>
+                                                @if ( $posts->r_gender == 'male')
                                                 <option value="female" >Female</option>
+                                                <option value="male" selected>Male</option>
+                                                @else
+                                                <option value="female" selected>Female</option>
                                                 <option value="male" >Male</option>
+                                                @endif
+                                                
+                                            
 
                                               </select>
                                </div>
@@ -97,7 +105,7 @@
 
                             <div class="form-group">
                               <label for="inputAddress">Address</label>
-                              <input type="text" class="form-control" id="inputAddress" name="r_address" placeholder="enter your address">
+                              <input type="text" class="form-control" id="inputAddress" name="r_address" placeholder="enter your address" value="{{ $posts->r_address }}">
                             </div>
                             <!-- <div class="form-group">
                               <label for="inputAddress2">Address 2</label>
@@ -106,26 +114,32 @@
                             <div class="form-row">
                               <div class="form-group col-md-4">
                                 <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity" name="r_city"  placeholder="required city" >
+                                <input type="text" class="form-control" id="inputCity" name="r_city"  placeholder="required city" value="{{ $posts->r_city }}">
                               </div>
                               <div class="form-group col-md-4">
                                 <label for="inputCity">Area</label>
-                                <input type="text" class="form-control" id="inputCity" name="r_area"  placeholder="required city"  >
+                                <input type="text" class="form-control" id="inputCity" name="r_area"  placeholder="required city"  value="{{ $posts->r_area }}">
                               </div>
                               
                               <div class="form-group col-md-4">
                                           <label for="inputGender4">Medium Prefrence</label>
-                                                <select class="form-control form-control-lg" name="r_medium" >
+                                                <select class="form-control form-control-lg" name="r_medium" value="{{ $posts->r_medium }}">
                                                 <option selected>Choose...</option>
-                                                <option value="english">English</option>
+                                                @if ($posts->r_medium == 'english')
+                                                <option value="english" selected>English</option>
                                                 <option value="bangla">Bangla</option>
+                                                @else
+                                                <option value="english">English</option>
+                                                <option value="bangla" selected>Bangla</option>
+                                                @endif
+                                                
 
                                               </select>
                                </div>
 
                                <div class="form-group col-md-12">
                                 <label for="inputCity">Short Description</label>
-                                <input type="text" class="form-control" id="inputCity" name="r_details"  placeholder="Describe here shortly"  >
+                                <input type="text" class="form-control" id="inputCity" name="r_details"  placeholder="Describe here shortly" value="{{ $posts->r_details }}" >
                               </div>
                               
                                               
@@ -134,7 +148,7 @@
                                
                               </div>
                             </div>
-                            <button type="submit" class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4">Register</button>
+                            <button type="submit" class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4">Update</button>
 
 
                 
