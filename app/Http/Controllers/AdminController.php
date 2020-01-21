@@ -50,7 +50,7 @@ class AdminController extends Controller
         
         
 
-      return redirect::to('/backend');
+      return redirect::to('/edulancer');
     
 
     }

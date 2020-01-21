@@ -46,7 +46,7 @@
           <div class="tiles dark" id="dark-theme"></div>
           <div class="tiles light" id="light-theme"></div>
         </div>
-        <!-- <div class="dropdown">
+     <!-- <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle btn-block mb-4" type="button" id="sidebar-color" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sidebar Mode
           </button>
@@ -54,7 +54,7 @@
             <a class="dropdown-item" href="#" id="side-theme-light">Light</a>
             <a class="dropdown-item" href="#" id="side-theme-dark">Dark</a>
           </div>
-        </div> -->
+        </div>  -->
         <!-- <div class="dropdown d-none d-md-block">
           <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="Layouts-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Layouts
@@ -293,19 +293,12 @@
             </li> -->
             <li class="nav-item">
 
-              <a class="nav-link" href="https://studio.youtube.com/channel/UCW4sDRCWmvs4lerHEiY6MrQ/livestreaming/dashboard?v=XY_NxgJIOgM">
-                <i class="mdi mdi-gauge menu-icon"></i>
-                
-                 <span class="btn btn-danger">Contact</span> 
-
-                <!-- <a href="#" class="btn btn-danger">Contact</a> -->
-               
-              </a>
+              
 
                 <li class="nav-item">
               <a class="nav-link" href="{{URL::to('/post')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
-                <span class="btn btn-danger">Post Ad</span>
+                <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Post Ad</span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
             </li>
@@ -313,7 +306,7 @@
              <li class="nav-item">
               <a class="nav-link" href="{{URL::to('/goestoview')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
-                <span class="btn btn-danger">History </span>
+                <span class="btn btn-danger"style="background-color:#7d00e4;color:white;border-color:#7d00e4">History </span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
             </li>
@@ -486,14 +479,4 @@
 <!-- Mirrored from www.urbanui.com/salt/jquery/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Dec 2017 12:32:50 GMT -->
 </html>
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d36251b6d80831228397906/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
+<script src="//code.tidio.co/nw9t0w8o7ycs8hkos6z8hxbymhhzekga.js" async></script>
