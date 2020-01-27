@@ -83,12 +83,13 @@
 </div>
 
 
-
-
-
-                 <button type="button" class="btn btn-primary mb-1 ml-4" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Apply</button>  
-                    
-
+    <form method="post" action="{{URL::to('/request_post')}}">
+            {{csrf_field()}}
+            <input type="hidden" id="r_id" name="r_id" value="{{ $post->r_id }}">
+                            
+            <button type="submit" class="btn btn-primary mb-1 ml-4" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Apply</button>
+      </form>
+   
             </div>
         </div>
         @endforeach

@@ -302,12 +302,20 @@
                 <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Post Ad</span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
-
-               <a class="nav-link" href="{{URL::to('/notification')}}">
+              @if(Session::get('type') == 'teacher')
+              <a class="nav-link" href="{{URL::to('/mynotification')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
-                <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Check</span>
+                <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Check My Request</span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
+              @else
+              <a class="nav-link" href="{{URL::to('/notification')}}">
+                <i class="mdi mdi-puzzle menu-icon"></i>
+                <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Check Applications</span>
+                <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
+              </a>
+              @endif
+               
 
 
 

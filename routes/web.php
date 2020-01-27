@@ -44,8 +44,8 @@ Route::get('/registration', function () {
 Route::get('/post', function () {
     return view('admin.post');
 });
-
-
+Route::get('/notification','StudenthistoryController@teacherRequests');
+Route::get('/mynotification','StudenthistoryController@myRequests');
 
 Route::get('/goestoview','ViewController@viewPost');
 
@@ -120,7 +120,8 @@ Route::post('/registration','RegistrationController@registration_booth');
 
 Route::post('/post_job','PostController@post_somethings');
 
-
+Route::post('/request_post', 'PostController@request_post');
+Route::post('/approve_request', 'PostController@approve_post');
 Route::post('/update_job','PostController@update_post');
 
 Route::post('/search_job','PostController@search_post');

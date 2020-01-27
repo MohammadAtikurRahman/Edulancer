@@ -161,6 +161,31 @@ class PostController extends Controller
         return view ('admin.view')->with('posts', $data);
 
      }
+     public function request_post(Request $request){
 
+        $data=array();
+        $data['request_teacher_id']=Session::get('id');
+        $data['request_post_id']=$request->r_id;
+        $data['request_status']="Waiting";
+        print_r($data);
+
+        
+        DB::table('techerrequests')->insert($data);
+        Session::put('message','post successfully');
+        return redirect::to('/goestoview');
+    }
+    public function approve_post(Request $request){
+
+        $data=array();
+       
+        $id=$request->r_id;
+        $data['request_status']="Approved";
+        print_r($data);
+
+        
+        DB::table('techerrequests')->where('request_id', $id)->update($data );
+        Session::put('message','post successfully');
+        return redirect::to('/notification');
+    }
 
 }
