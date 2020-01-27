@@ -60,7 +60,7 @@
             {{csrf_field()}}
             <input type="hidden" id="r_id" name="r_id" value="{{ $post->request_id }}">
                             
-            <button type="submit" class="btn btn-primary mb-1 ml-4" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Approve</button>
+            <button type="submit" class="btn btn-primary mb-1 ml-4" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >{{ $post->request_status }}</button>
       </form>
    
             </div>

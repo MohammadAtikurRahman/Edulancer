@@ -60,12 +60,10 @@ class StudenthistoryController extends Controller
             ->join('posttimelines','posttimelines.r_id','=','techerrequests.request_post_id')
             ->join('teacherinformations','teacherinformations.t_id','=','techerrequests.request_teacher_id')
             ->where('posttimelines.student_id', $u_id)
+            ->where('techerrequests.request_status', 'Waiting')
             ->get();
 
             return view ('admin.teachers_job_requests')->with('posts', $rows1);
-           
-
-
          }
          public function myRequests(){
             $u_id = Session::get('id');
@@ -77,9 +75,6 @@ class StudenthistoryController extends Controller
             ->get();
 
             return view ('admin.teacher_own_requests')->with('posts', $rows1);
-           
-
-
          }
 
 }

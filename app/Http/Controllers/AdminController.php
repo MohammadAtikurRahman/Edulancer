@@ -126,6 +126,14 @@ class AdminController extends Controller
           Session::put('scl_name',$user_profile->s_school);
           Session::put('gender',$user_profile->s_gender);
           Session::put('address',$user_profile->s_address);
+          $rows1 = DB::table('techerrequests')
+          ->join('posttimelines','posttimelines.r_id','=','techerrequests.request_post_id')
+          ->join('teacherinformations','teacherinformations.t_id','=','techerrequests.request_teacher_id')
+          ->where('posttimelines.student_id',$result->id)
+          ->where('techerrequests.request_status', 'Waiting')
+          ->get();
+          $student_notification_count = $rows1->count();
+          Session::put('student_notification_count',$student_notification_count);
         return redirect::to('/post');
 
 

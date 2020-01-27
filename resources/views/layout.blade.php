@@ -19,6 +19,31 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.html" />
+  <style>
+  .notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+  </style>
 </head>
 <body class="sidebar-dark">
   <!-- partial:partials/_settings-panel.html -->
@@ -303,14 +328,17 @@
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
               @if(Session::get('type') == 'teacher')
-              <a class="nav-link" href="{{URL::to('/mynotification')}}">
+              <a class="nav-link notification" href="{{URL::to('/mynotification')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
+                <span class="badge">{{ session()->get( 'teacher_notification_count' ) }}</span>
                 <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Check My Request</span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
+              
               @else
-              <a class="nav-link" href="{{URL::to('/notification')}}">
+              <a class="nav-link notification" href="{{URL::to('/notification')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
+                <span class="badge">{{ session()->get( 'student_notification_count' ) }}</span>
                 <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Check Applications</span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
@@ -327,7 +355,7 @@
             </li>
               @if(Session::get('type') == 'teacher')
                 <li class="nav-item">
-                <a class="nav-link" href="{{URL::to('/goestoview')}}">
+                <a class="nav-link " href="{{URL::to('/goestoview')}}">
                   <i class="mdi mdi-puzzle menu-icon"></i>
                   <span class="btn btn-danger"style="background-color:#7d00e4;color:white;border-color:#7d00e4">Timeline </span>
                   <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->

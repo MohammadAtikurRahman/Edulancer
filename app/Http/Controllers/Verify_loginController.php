@@ -59,6 +59,18 @@ class Verify_loginController extends Controller
           Session::put('scl_name',$user_profile->t_school);
           Session::put('gender',$user_profile->t_gender);
           Session::put('address',$user_profile->t_p_address);
+
+
+         
+          $rows1 = DB::table('techerrequests')
+          ->join('posttimelines','posttimelines.r_id','=','techerrequests.request_post_id')
+          ->join('teacherinformations','teacherinformations.t_id','=','techerrequests.request_teacher_id')
+          ->where('techerrequests.request_teacher_id',  $result->t_id)
+          ->where('techerrequests.request_status', 'Approved')
+          ->get();
+          $teacher_notification_count = $rows1->count();
+          Session::put('teacher_notification_count',$teacher_notification_count);
+
         return redirect::to('/goestoview');
 
 
