@@ -59,7 +59,7 @@ class Verify_loginController extends Controller
           Session::put('scl_name',$user_profile->t_school);
           Session::put('gender',$user_profile->t_gender);
           Session::put('address',$user_profile->t_p_address);
-        return redirect::to('/admin_dashboard');
+        return redirect::to('/goestoview');
 
 
 

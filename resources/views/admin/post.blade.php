@@ -134,7 +134,7 @@
                                
                               </div>
                             </div>
-                            <button type="submit" class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4">Register</button>
+                            <button type="submit" class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4">Submit</button>
 
 
                 

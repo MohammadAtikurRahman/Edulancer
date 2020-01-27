@@ -151,11 +151,11 @@
         </form>
         <ul class="navbar-nav ml-lg-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
+            <!-- <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
               <i class="mdi mdi-bell-outline"></i>
               <span class="count bg-warning">7</span>
-            </a>
-            <div class="dropdown-menu navbar-dropdown notification-drop-down" aria-labelledby="notificationDropdown">
+            </a> -->
+            <!-- <div class="dropdown-menu navbar-dropdown notification-drop-down" aria-labelledby="notificationDropdown">
               <a class="dropdown-item" href="#">
                 <i class="fa fa-birthday-cake text-success fa-fw"></i>
                 <span class="notification-text">Today is John's birthday</span>
@@ -176,7 +176,7 @@
                 <i class="fa fa-bell text-warning fa-fw"></i>
                 <span class="notification-text">Payment Due</span>
               </a>
-            </div>
+            </div> -->
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
@@ -219,7 +219,7 @@
                   <p class="Sender-message">want to logout</p>
                 </div>
               </a>
-              <a href="#" class="dropdown-item view-all">View all</a>
+             
             </div>
           </li>
         </ul>
@@ -305,7 +305,7 @@
 
                <a class="nav-link" href="{{URL::to('/notification')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
-                <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Notifice</span>
+                <span class="btn btn-danger" style="background-color:#7d00e4;color:white;border-color:#7d00e4" >Check</span>
                 <!-- <span class="badge badge-danger badge-pill ml-auto">New</span> -->
               </a>
 

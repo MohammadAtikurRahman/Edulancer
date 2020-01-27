@@ -55,29 +55,29 @@
                               </div>
                               <div class="form-group col-md-4">
                                 <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" name="s_email"  placeholder="Enter Your Email">
+                                <input type="email" class="form-control" name="s_email"  placeholder="Enter Your Email" required>
                               </div>
                               <div class="form-group col-md-4">
                                 <label for="inputEmail4">Password</label>
-                                <input type="password" class="form-control" name="s_password"  placeholder="Enter Your Email">
+                                <input type="password" class="form-control" name="s_password"  placeholder="Enter Your Password" required>
                               </div>
 
                                 <div class="form-group col-md-6">
                                  <label for="inputName4">School </label>
-                                 <input type="text" class="form-control" name="s_school" placeholder="Enter Your School Name">
+                                 <input type="text" class="form-control" name="s_school" placeholder="Enter Your School Name" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                  <label for="inputEmail4">College</label>
-                                 <input type="text" class="form-control" name="s_college" placeholder="Enter Your College Name">
+                                 <input type="text" class="form-control" name="s_college" placeholder="Enter Your College Name" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                  <label for="inputEmail4">University</label>
-                                 <input type="text" class="form-control" name="s_university" placeholder="Enter Your University Name">
+                                 <input type="text" class="form-control" name="s_university" placeholder="Enter Your University Name" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                           <label for="inputGender4">Gender</label>
-                                                <select class="form-control form-control-lg" name="s_gender" >
-                                                <option selected>Choose...</option>
+                                                <select class="form-control form-control-lg" name="s_gender" required >
+                                                <option selected >Choose...</option>
                                                 <option value="female">Female</option>
                                                 <option value="male">Male</option>
 
@@ -96,7 +96,7 @@
 
                             <div class="form-group">
                               <label for="inputAddress">Address</label>
-                              <input type="text" class="form-control" name="s_address" placeholder="Enter Your Address">
+                              <input type="text" class="form-control" name="s_address" placeholder="Enter Your Address"required>
                             </div>
                             <!-- <div class="form-group">
                               <label for="inputAddress2">Address 2</label>
@@ -105,16 +105,16 @@
                             <div class="form-row">
                               <div class="form-group col-md-4">
                                 <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity" name="s_city"   placeholder="Enter Your City"  >
+                                <input type="text" class="form-control" id="inputCity" name="s_city"   placeholder="Enter Your City" required   >
                               </div>
                               <div class="form-group col-md-4">
                                 <label for="inputCity">Thana</label>
-                                <input type="text" class="form-control" id="inputCity"      name="s_thana"   placeholder="Enter Your Thana"                >
+                                <input type="text" class="form-control" id="inputCity"      name="s_thana"   placeholder="Enter Your Thana"    required            >
                               </div>
                               
                               <div class="form-group col-md-4">
                                 <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip"  name="s_zip"   placeholder="Enter Your ZIP"        >
+                                <input type="text" class="form-control" id="inputZip"  name="s_zip"   placeholder="Enter Your ZIP"  required      >
                               </div>
                             </div>
                             <div class="form-group">

@@ -245,7 +245,7 @@ need to understand your subjects and ace your competitive exams</p>
 
                 <footer class="entry-footer">
                     <a href="#" class="btn gradient-bg">Read More</a>
-                    <a href="#" class="btn dark">Register Now</a>
+                    <a href="http://localhost:8000/settings" class="btn dark">LIVE CLASS</a>
                 </footer>
             </div>
         </div>
@@ -292,6 +292,19 @@ need to understand your subjects and ace your competitive exams</p>
                         <h3 class="entry-title">Raihan Ahamed</h3>
                             
                             <div class="posted-date">EXPERT AT JAVA</div>
+                            <h3 class="entry-title">Send Message</h3>
+                        </header>
+                    </div>
+
+                     <div class="event-content-wrap positioning-event-5">
+                        <figure>
+                            <a href="#"><img src="images/salman.jpg" alt=""></a>
+                        </figure>
+
+                        <header class="entry-header">
+                        <h3 class="entry-title">Salman Haque</h3>
+                            
+                            <div class="posted-date">EXPERT AT MARKETING</div>
                             <h3 class="entry-title">Send Message</h3>
                         </header>
                     </div>

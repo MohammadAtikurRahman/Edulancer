@@ -90,13 +90,13 @@
                         </div>
                         <div class="form-row">
                           <div class="col-md-6 mb-2 col-lg-4">
-                        <label for="example-date-input" class="col-form-label">Birth Date</label>
+                        <label for="example-date-input" class="col-form-label"  required>Birth Date</label>
                           
                             <input class="form-control" type="date"  name="t_date" value id="example-date-input" />
                           </div>
                           <div class="col-md-4 mb-3 col-lg-4">
                         <label for="validationCustom01">Phone Number</label>
-                        <input type="number" class="form-control" id="validationCustom01" name="t_phone" placeholder="01xxxxxxxxx"  required>
+                        <input type="number" class="form-control" id="validationCustom01" name="t_phone" placeholder="01xxxxxxxxx" >
                       </div>
                           <div class="form-inline">
                             <label class="col-4">Gender</label>
@@ -107,6 +107,7 @@
                                 name="t_gender"
                                 id="inlineRadio1"
                                 value="option1"
+                                required
                               />
                               <label class="form-check-label" for="inlineRadio1">Male</label>
                             </div>
@@ -125,7 +126,7 @@
                         </div>
                         <div class="form-group">
                           <label for="inputAddress">School</label>
-                          <input type="text" class="form-control" name="t_school" id="inputAddress" placeholder="School name" />
+                          <input type="text" class="form-control" name="t_school" id="inputAddress" placeholder="School name"  required />
                         </div>
                         <div class="form-group">
                           <label for="inputAddress2">College</label>
@@ -135,6 +136,7 @@
                             id="inputAddress2"
                             name="t_college"
                             placeholder="College name"
+                            required
                           
                           />
                         </div>
@@ -142,14 +144,15 @@
                           <label for="inputAddress">University</label>
                           <input type="text"  class="form-control" 
                           name="t_university"
+                          
 
-                           id="inputAddress" placeholder="University name" />
+                           id="inputAddress" placeholder="University name" required />
                         </div>
                         <div class="form-row">
                         <div class="col-lg-5 col-md-4 my-2">
                         <label class="mr-sm-2" for="inlineFormCustomSelect" >Depertment</label>
                         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect"
-                         name="t_department">
+                         name="t_department"required>
                          
                           <option selected>Choose one...</option>
                           <option value="science">Science</option>
@@ -159,7 +162,7 @@
                       </div>
                     <div class="col-lg-7 col-md-4 my-2">
                       <label for="exampleSelect1">Select Area</label>
-                      <select class="custom-select mr-sm-2"name="t_area" id="inlineFormCustomSelect" >
+                      <select class="custom-select mr-sm-2"name="t_area" id="inlineFormCustomSelect" required >
                             <option selected>Choose one...</option>
                         <option value="boshila" >Boshila</option>
                         <option value="notunbazar" >Notunbazar</option>
@@ -193,11 +196,11 @@
                           <div class="form-row">
                       <div class="col-md-4 mb-2 col-lg-6">
                         <label for="validationTooltip09">Present Address</label>
-                        <input type="text" class="form-control" name="t_p_address" id="validationTooltip09" placeholder="Enter your present addresss" />
+                        <input type="text" class="form-control" name="t_p_address" id="validationTooltip09" placeholder="Enter your present addresss" required />
                       </div>
                       <div class="col-md-4 mb-2 col-lg-6">
                         <label for="validationTooltip08">Parmanent Address</label>
-                        <input type="text" class="form-control" name="t_pr_address" id="validationTooltip08" placeholder="Enter your present addresss">
+                        <input type="text" class="form-control" name="t_pr_address" id="validationTooltip08" placeholder="Enter your present addresss" required>
                         
                       </div>
                   
@@ -246,7 +249,7 @@
                             </div>
                           </div>
                         </div> -->
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit"style="background-color:#7d00e4;color:white;border-color:#7d00e4">Register</button>
                       
                       
                       
