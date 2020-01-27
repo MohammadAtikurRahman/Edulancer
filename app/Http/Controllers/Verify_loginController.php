@@ -47,7 +47,7 @@ class Verify_loginController extends Controller
 
 
         Session::put('t_email',$result->t_email);
-        Session::put('t_id',$result->t_id);
+        Session::put('id',$result->t_id);
         Session::put('type','teacher');
         
         $user_profile=DB::table('teacherinformations')

@@ -30,8 +30,8 @@
             {{$post->t_area}}
             {{$post->t_p_address}}
             {{$post->t_pr_address}}
-            {{$post->t_name}}
-  
+            
+            <a href="{{ URL::to('/profileview/'.$post->t_id )}}">{{$post->t_name}}</a>
             </div>
 
         <div class="container">

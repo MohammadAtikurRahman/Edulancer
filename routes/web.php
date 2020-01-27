@@ -11,6 +11,9 @@
 |
 */
 
+
+Route::get('/profileview/{id}', 'ProfileviewController@profileview');
+Route::post('/profileRating','ProfileviewController@profileRate');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -45,7 +48,7 @@ Route::get('/post', function () {
     return view('admin.post');
 });
 Route::get('/notification','StudenthistoryController@teacherRequests');
-Route::get('/mynotification','StudenthistoryController@myRequests');
+Route::get('/mynotification','StudenthistoryController@teacherRequests');
 
 Route::get('/goestoview','ViewController@viewPost');
 
