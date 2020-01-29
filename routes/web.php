@@ -27,7 +27,16 @@ Route::get('/backend', function () {
 Route::get('/edulancer', function () {
     return view('admin.edulancer');
 });
+////////////
 
+
+
+
+Route::get('/studymaterial', function () {
+    return view('admin.studymaterial');
+
+});
+////////
 
 Route::get('/reg_for_teacher', function () {
     return view('admin.reg_for_teacher');

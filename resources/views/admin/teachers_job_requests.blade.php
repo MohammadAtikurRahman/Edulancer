@@ -8,7 +8,70 @@
         @foreach($posts as $post)
         <div class="row" style="position: relative;">
             <div class="col-md-12 col-sm-12">     
-            {{ $post->r_subject }}
+         
+              <div class="row" style="position: relative;">
+            <div class="col-md-12 col-sm-12">                
+                <p style="font-size: 20px; font-weight: bold; margin: 0 !important;">Need a tutor for {{ $post->r_subject }} student
+                </p>
+                <a style="font-size: 20px; font-weight: bold; margin: 0 !important;" href="{{ URL::to('/profileview/'.$post->t_id )}}">User: {{$post->t_name}}</a>
+                <div class="row" style="font-size: 15px !important; margin: 7px 0 0 0;">
+                    <div class="col-md-3 col-sm-12" style="padding-left: 0px;padding-right: 0px;">
+                        <span style="font-weight: bold; color: #0675c1;">Category : </span>{{ $post->r_medium }} Medium
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-12" style="padding-left: 0px;"><span
+                            style="font-weight: bold; color: #0675c1;">Salary : </span>{{ $post->r_salary }} Tk
+                    </div>
+                    <div class="col-md-3 col-sm-12" style="padding-left: 0px;">
+                        <span style="font-weight: bold; color: #0675c1;">Weekly : </span>   {{ $post->r_weekly }} Days 
+                    </div>
+                    <div class="col-md-3 col-sm-12" style="padding-left: 0px;">
+                        <span style="font-weight: bold; color: #0675c1;">Preference Gender : </span> {{ $post->r_gender }} 
+                    </div>
+
+                    
+                    <div class="col-md-7 col-sm-12 pl-3 mt-2">
+
+                        <p style="font-size: 15px !important; margin-top: 0px !important; margin-bottom: 0px !important;">
+                            <span style="font-weight: bold;">Tutoring Time : </span>{{ $post->r_schedule }}</p>
+                            
+                        <p style="font-size: 15px !important; margin-top: 0px !important; margin-bottom: 0px !important;">
+                            <span style="font-weight: bold;">Address : </span>{{ $post->r_address }}</p>
+
+                        <p style="font-size: 15px !important; margin-top: 0px !important; margin-bottom: 0px !important;">
+                            <span style="font-weight: bold;">Area : </span>{{ $post->r_area }}</p>
+
+                        <p style="font-size: 15px !important; margin-top: 0px !important; margin-bottom: 0px !important;">
+                            <span style="font-weight: bold;">City : </span>{{ $post->r_city }}</p>
+
+                        <p style="font-size: 15px !important; margin-top: 0px !important; margin-bottom: 0px !important;">
+                            <span style="font-weight: bold;">Details : </span>{{ $post->r_details }}</p>                       
+                    </div>
+
+
+
+                     
+
+
+
+
+                          
+                      
+                </div>
+
+
+
+
+
+                <div class="container">
+    <div class="form-group">
+
+
+
+
+
+            <!-- {{ $post->r_subject }}
             {{ $post->r_salary }}
             {{ $post->r_weekly }}
             {{ $post->r_schedule }}
@@ -30,8 +93,8 @@
             {{$post->t_area}}
             {{$post->t_p_address}}
             {{$post->t_pr_address}}
-            
-            <a href="{{ URL::to('/profileview/'.$post->t_id )}}">{{$post->t_name}}</a>
+             -->
+           
             </div>
 
         <div class="container">

@@ -8,6 +8,11 @@
         @foreach($posts as $post)
         <div class="row" style="position: relative;">
             <div class="col-md-12 col-sm-12">     
+
+
+
+
+            
             {{ $post->r_subject }}
             {{ $post->r_salary }}
             {{ $post->r_weekly }}

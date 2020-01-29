@@ -244,7 +244,7 @@ need to understand your subjects and ace your competitive exams</p>
                 </div>
 
                 <footer class="entry-footer">
-                    <a href="#" class="btn gradient-bg">Read More</a>
+                    <a href="http://localhost/send%20my%20mail/course.html" class="btn gradient-bg">Go the Study Material</a>
                     <a href="http://localhost:8000/settings" class="btn dark">LIVE CLASS</a>
                 </footer>
             </div>
