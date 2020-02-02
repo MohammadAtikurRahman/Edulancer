@@ -206,12 +206,12 @@
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
               <i class="mdi mdi-message-outline"></i>
-              <span class="count bg-danger">4</span>
+              <span class="count bg-danger"></span>
             </a>
             <div class="dropdown-menu navbar-dropdown mail-notification" aria-labelledby="MailDropdown">
             
             
-              <a class="dropdown-item" href="{{URL::to('/view')}}">
+            <!--   <a class="dropdown-item" href="{{URL::to('/view')}}">
                 <div class="sender-img">
                   <img src="http://via.placeholder.com/47x47" alt="">
                   <span class="badge badge-success">&nbsp;</span>
@@ -221,8 +221,8 @@
                   <p class="Sender-message">Want to visit profile</p>
                 </div>
               </a>
-             
-             
+              -->
+            <!--  
               <a class="dropdown-item" href="{{URL::to('/settings')}}">
                 <div class="sender-img">
                   <img src="http://via.placeholder.com/47x47" alt="">
@@ -232,7 +232,7 @@
                   <p class="Sende-name">Settings</p>
                   <p class="Sender-message">Change your Sittings</p>
                 </div>
-              </a>
+              </a> -->
             
               <a class="dropdown-item" href="{{URL::to('/logout')}}">
                 <div class="sender-img">

@@ -9,13 +9,13 @@
     <div class="container main-secction">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 image-section">
-                <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/08/57/41562ad4a92b16a.jpg">
+                <a><img src="https://i.ibb.co/Xy4zp8v/unnamed.jpg" alt="unnamed" border="0"></a>
             </div>
             <div class="row user-left-part">
                 <div class="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
                     <div class="row ">
                         <div class="col-md-12 col-md-12-sm-12 col-xs-12 user-image text-center">
-                            <img src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user-purple.png" class="rounded-circle">
+                           <a> <img src="https://i.ibb.co/jZCJg4q/Round-Profile-Pic.png" alt="Round-Profile-Pic" border="0"></a>
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 user-detail-section1 text-center">
                             <button id="btn-contact" (click)="clearModal()" data-toggle="modal" data-target="#contact" class="btn btn-success btn-block follow">Contact me</button> 

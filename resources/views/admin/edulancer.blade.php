@@ -391,7 +391,7 @@ need to understand your subjects and ace your competitive exams</p>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="images/next15.jpg" alt="1"></a>
+                        <a href="#"><img src="images/xxx.jpg" alt="1"></a>
 
                         <div class="event-rating">Free</div>
                     </figure>
@@ -415,7 +415,7 @@ need to understand your subjects and ace your competitive exams</p>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="images/next15.jpg" alt="1"></a>
+                        <a href="#"><img src="images/yyy.jpg" alt="1"></a>
 
                         <div class="event-rating">Free</div>
                     </figure>

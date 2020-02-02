@@ -8,7 +8,7 @@
         @foreach($posts['table1'] as $post)
         <div class="row" style="position: relative;">
             <div class="col-md-12 col-sm-12">                
-                <p style="font-size: 20px; font-weight: bold; margin: 0 !important;">Need a tutor for {{ $post->r_subject }} student
+                <p style="font-size: 20px; font-weight: bold; margin: 0 !important;">Need a tutor for {{ $post->r_subject }} 
                 </p>
 
                 <div class="row" style="font-size: 15px !important; margin: 7px 0 0 0;">

@@ -127,8 +127,18 @@
                             <h5>Video Editig Live Class</h5>
                             <span>loading...</span>
 
-                            <iframe width="1050" height="700" src="https://video.ibm.com/embed/23768396" allowfullscreen="allowfullscreen">
-                            </iframe>
+                            <!-- <iframe width="1050" height="700" src="https://video.ibm.com/embed/23768396" allowfullscreen="allowfullscreen">
+                            </iframe> -->
+
+
+                                                                <iframe
+                                    src="https://video.ibm.com/embed/23768396" 
+                                    style="border: 0;" webkitallowfullscreen allowfullscreen 
+                                    frameborder="no"
+                                    width="1050" height="700">
+
+
+                                    </iframe>
                             <!-- <p>Learn this machine language programming, grab this opportunity fastly.</p> -->
                             <!-- <a href="#" class="btn academy-btn btn-sm">EXPLORE</a> -->
                         </div>
